@@ -1,6 +1,6 @@
 {
   "name": "preference-drag-vue",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name common --dest lib packages/index.js"
   },
+  "main": "lib/common.umd.js",
   "dependencies": {
     "core-js": "^3.8.3",
     "fabric": "^5.2.4",

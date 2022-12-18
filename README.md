@@ -1,6 +1,6 @@
 # preference-drag-vue
 
-`区别于vue3.0的vue2.0版本`
+`区别于vue3.0的vue2.0版本,0.0.3之前有bug，升级0.0.4`
 
 ## install
 
