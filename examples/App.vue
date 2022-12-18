@@ -1,51 +1,19 @@
-# preference-drag-vue
-
-`区别于vue3.0的vue2.0版本`
-
-## install
-
-```html
-   npm install preference-drag-vue
-```
-
-### props
-
-   |  propsName   | type | propsValue  |
-   |  ---- | ---- | ----  |
-   | netSize | Number | 网格大小 |
-   | settingData | Array | 数据 |
-   | topTitle | String | topTitle 顶部展示的类型名称 |
-   | leftTitle | String | leftTitle 左侧展示的类型名称 |
-   | rightTitle | String | rightTitle 右侧展示的类型名称 |
-   | bottomTitle | String | bottomTitle 下方展示的类型名称 |
-   | row | Number | 1、必须是奇数且能被settingData.length整除。2、列数：settingData.length / row（必须是奇数） |
-
-#### demo
-
-```HTML
-  import Vue from 'vue'
-import App from './App.vue'
-import PreferenceDragVue from './components'
-Vue.config.productionTip = false
-Vue.use(PreferenceDragVue)
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
-
-
-```
-
-```HTML
-   <template>
+<!--
+ * @Descripttion: spider
+ * @version: 1.0.0
+ * @Author: Lee Han
+ * @Date: 2022-12-18 10:19:52
+ * @LastEditors: Lee Han
+ * @LastEditTime: 2022-12-18 18:26:23
+-->
+<template>
   <div id="app">
-    <PreferenceDragVue :row="5" :settingData="settingData" :netSize="50" topTitle="topTitle-test"
+    <preference-drag-vue :row="5" :settingData="settingData" :netSize="50" topTitle="topTitle-test"
       leftTitle="leftTitle-test" rightTitle="rightTitle-test" bottomTitle="bottomTitle-test" />
   </div>
 </template>
-```
 
-```HTML
-   <script>
+<script>
 
 export default {
   name: 'App',
@@ -207,4 +175,14 @@ export default {
   }
 }
 </script>
-```
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
