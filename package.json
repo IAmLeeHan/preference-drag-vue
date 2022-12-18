@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "preference-drag-vue",
   "version": "0.0.1",
   "private": false,
   "scripts": {
@@ -43,5 +43,9 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IAmLeeHan/preference-drag-vue"
+  }
 }
